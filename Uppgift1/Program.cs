@@ -13,7 +13,7 @@ namespace Uppgift1
 
             Console.WriteLine("Skriv en mening:"); //skriv mening
             
-            string sentence = Console.ReadLine();
+            string sentence = Console.ReadLine(); // sparar mening i strängen sentence
 
             int wordCount = 0;
 
@@ -31,7 +31,7 @@ namespace Uppgift1
 
             Console.WriteLine($"Antalet ord i meningen är: {wordCount}");
 
-            string[] subs = sentence.Split(' ');
+            string[] subs = sentence.Split(' '); // 
             foreach (string word in subs)
             {
                 Console.WriteLine($"{word} ({word.Length})");
